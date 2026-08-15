@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mirror / Window — IXD415</title>
+<meta name="description" content="Project 1: a moving image that responds. Build something in TouchDesigner that is different because you walked up to it.">
+<link rel="stylesheet" href="https://use.typekit.net/dky6jkz.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="wordmark" href="index.html">IXD415 // Emerging Tech</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Course</a>
+      <a href="details.html">Details</a>
+      <a href="mirror-window.html" aria-current="page">Mirror / Window</a>
+      <a href="bring-people-together.html">Bring People Together</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="meta">
+    <span>Project 1</span>
+    <span>4 weeks · 8 sessions</span>
+    <span>Individual</span>
+    <span>TouchDesigner</span>
+  </div>
+</div>
+
+<main id="main">
+  <div class="wrap">
+
+    <section class="hero">
+      <span class="eyebrow">Project 1</span>
+      <h1>Mirror /<br>Window</h1>
+      <p class="dek">A moving image that responds.</p>
+    </section>
+
+    <section>
+      <div class="prose--wide">
+        <p class="lede">So much cool interactive work involves video. But video itself isn't very interactive. You can make a beautiful demo in After Effects or a compelling bit in CapCut, and it will do exactly the same thing every single time, forever, no matter who's standing in front of it.</p>
+        <p>In this project we're going to make a moving image that responds. Something that is different because you walked up to it.</p>
+        <p>The tool is TouchDesigner. It's a node-based visual programming environment used for a lot of the interactive installation work you've seen in museums, concerts, and lobbies. The learning curve is steep and I'm not going to pretend otherwise. But we have an MCP connected to Claude, which means you can describe what you want in English and get help building it — and more importantly, when it breaks, you can ask for help.</p>
+        <p>That last part is the actual skill I want you to leave with.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <span class="eyebrow eyebrow--ink">Read this part twice</span>
+        <h2>Why this tool, and why the tool is not the point</h2>
+      </div>
+
+      <div class="prose--wide">
+        <p>TouchDesigner is a stand-in. In two years it might be something else, and in five years it almost certainly will be. What doesn't change is the sequence you run whenever you meet an unfamiliar technology, which is the whole reason this course exists.</p>
+
+        <h3>First, find out what the thing can actually do</h3>
+        <p>Not what the marketing says it does. Read the docs, watch somebody use it, poke it, break it, build the smallest thing that works. You are mapping the edges of a box. This part feels like flailing and it is supposed to.</p>
+
+        <h3>Then aim your existing toolkit at it</h3>
+        <p>You've spent three years learning how to design interactions, and none of that stops applying just because the medium is unfamiliar:</p>
+        <ul>
+          <li><strong>Input and affordances</strong> — what can a person do here, and how do they know they can do it?</li>
+          <li><strong>Output and feedback</strong> — what happens when they do, and how do they know it happened?</li>
+          <li><strong>Constraints</strong> — what does this medium refuse to do? What does this room, this hour, this hardware, this audience refuse to do?</li>
+          <li><strong>And then the normal loop</strong> — ideate, prototype, test, refine, and do it again.</li>
+        </ul>
+
+        <blockquote>
+          <p>The failure mode of emerging tech work is stopping after the first part. Plenty of people learn a new tool and then make a demo that shows off the tool. A demo is not a design. The design starts when you take a thing that can do something and point it at a person.</p>
+        </blockquote>
+
+        <p>That's why this project is evaluated on whether a stranger understands your piece, and not on how complicated your node network is.</p>
+        <p>You're going to run this same sequence again in the spring with different tools. The tool changes. The sequence doesn't.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <span class="eyebrow eyebrow--ink">The setup</span>
+        <h2>Client, doors, deliverables</h2>
+      </div>
+
+      <div class="rows">
+
+        <div class="row">
+          <div class="row__key">Your client</div>
+          <div class="row__val">
+            <p>No client. But you do have a user, and she is very specific: she is a person who walks up to your piece having never seen it, having read nothing, with nobody standing next to her explaining it. She has about four seconds of curiosity before she walks away.</p>
+            <p>Everything you make has to survive her.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row__key">Two doors</div>
+          <div class="row__val">
+            <p>Pick one. It's just a way to decide where your input comes from.</p>
+            <ul>
+              <li><strong>Mirror</strong> — the input is the viewer. Webcam, microphone, presence, motion. The piece responds to the body in front of it.</li>
+              <li><strong>Window</strong> — the input is somewhere else. Live data, an API, a feed, a scrape, another room, another city. The piece is a hole in the wall looking at something far away.</li>
+            </ul>
+            <p>You can combine them, and the interesting work often does. But start by picking one, because "it responds to everything" is how you end up with something that responds to nothing.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row__key">Deliverables</div>
+          <div class="row__val">
+            <ol>
+              <li><strong>A working <code>.toe</code> file.</strong> It runs on your machine. It runs when I'm standing there.</li>
+              <li><strong>A live demo, twice</strong> — an in-progress one in Session VI and a final one in Session VIII. Running, with people walking up to it.</li>
+              <li><strong>A documentation video, 60–90 seconds.</strong> There must be a human in the frame. A screen capture of your output is not documentation of an interactive piece; it's just a video, which is the exact thing we're trying to get away from.</li>
+              <li><strong>A build log</strong>, in markdown, committed to your repo. What you tried, what broke, what you asked Claude, what finally worked. Rough notes are fine — I'd rather have honest and ugly than polished and retroactive.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row__key">Constraints</div>
+          <div class="row__val">
+            <ul>
+              <li>It has to run for three minutes without crashing and without you touching it.</li>
+              <li>A stranger has to be able to use it without instructions.</li>
+              <li>Your laptop, a webcam, a mic, a keyboard, a screen, and an internet connection are the baseline, and a good project can be made from exactly that.</li>
+              <li><strong>You may bring in other hardware</strong> — other sensors, other input devices, projectors, motors, lights, whatever the idea needs. Do it at your own risk and your own budget. I'm not buying it, I can't guarantee it'll work, and "the part didn't ship" is not an extension. If the hardware is the whole idea, have a fallback.</li>
+              <li><strong>You may install it somewhere other than our classroom</strong> — a hallway, a stairwell, some neglected corner of the design building. That's allowed and sometimes it's much better. Two rules: it has to be within walking distance, and it has to be accessible to all of us during class time. Tell me early if you're going this direction.</li>
+              <li>You have four weeks. This is a sketch, not a career.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row__key">Laptops</div>
+          <div class="row__val">
+            <p>This one's a Laptop Open project. That's a change and I'm doing it on purpose — you can't learn a node graph from a comp book. But we'll still open and close them deliberately. When we're critiquing, laptops go down.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <span class="eyebrow eyebrow--ink">Go look at these</span>
+        <h2>Inspo</h2>
+      </div>
+
+      <div class="prose--wide">
+        <p>Interactive work that's mostly about a body in a room.</p>
+      </div>
+
+      <ul class="linklist">
+        <li><a href="https://www.smoothware.com/danny/art.html">Daniel Rozin — mechanical mirrors</a><span class="sub">The whole Mirror door, in physical form.</span></li>
+        <li><a href="https://camilleutterback.com/projects/text-rain/">Camille Utterback &amp; Romy Achituv — Text Rain</a><span class="sub">1999, and still the clearest demo of a legible interaction loop.</span></li>
+        <li>Rafael Lozano-Hemmer<span class="sub">Installation work, especially the pieces built on computer vision and biometrics.</span></li>
+        <li>Random International — Rain Room<span class="sub">Worth thinking about as an interaction almost everyone understands instantly.</span></li>
+      </ul>
+
+      <h3>Getting started with the tool</h3>
+      <ul class="linklist">
+        <li><a href="https://derivative.ca/UserGuide/Learn_TouchDesigner">Learn TouchDesigner</a><span class="sub">Derivative's own starting point.</span></li>
+        <li><a href="https://derivative.ca/community-post/tutorial/full-beginner-course">Full Beginner Course</a></li>
+        <li><a href="https://derivative.ca/tags/elekktronaut">Bileam Tschepe / elekktronaut</a><span class="sub">The best of the YouTube TD teachers.</span></li>
+        <li><a href="https://www.youtube.com/watch?v=kluq0JisBoo">The MCP setup video I used</a><span class="sub">Note that it did not work for me the first time.</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <span class="eyebrow eyebrow--ink">Four weeks</span>
+        <h2>Sessions</h2>
+      </div>
+
+      <div class="sessions">
+
+        <div class="session">
+          <div class="session__n">Session I</div>
+          <div>
+            <h3 class="session__t">Kickoff — what is a loop?</h3>
+            <ul>
+              <li>Project brief: a moving image that responds</li>
+              <li>Discussion: what's the actual difference between a video and an interaction? A video is a recording. An interaction is a loop: input, change, feedback, and the viewer noticing the feedback.</li>
+              <li>Discussion: which of those four does most "interactive" work actually get wrong?</li>
+              <li>The two doors: Mirror and Window. Where does your input come from?</li>
+              <li>Demo: what a TouchDesigner network looks like. What a node is. Why it's a graph and not a timeline.</li>
+              <li>Install TouchDesigner (the non-commercial license is free)</li>
+            </ul>
+            <div class="hw">
+              <span class="hw__label">Homework</span>
+              <p>Get TouchDesigner installed and get the Claude MCP connected. Then get <em>anything</em> on screen — your webcam feed with a single effect on it is plenty. Screenshot it.</p>
+            </div>
+            <div class="hw">
+              <span class="hw__label">And homework</span>
+              <p>It will break. That's not a risk, it's the assignment. Write down what broke, what you asked Claude, and what happened next. Bring those notes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="session">
+          <div class="session__n">Session II</div>
+          <div>
+            <h3 class="session__t">What can this thing actually do?</h3>
+            <ul>
+              <li>Everybody shows their one working thing. Two minutes each.</li>
+              <li>Where did it break? We put all the failures on the board and look at them together. I expect overlap.</li>
+              <li>Survey of the parts: TOPs, CHOPs, SOPs, DATs — not a deep dive, just enough to know what to reach for</li>
+              <li>What inputs are actually available to us: webcam, mic, mouse, keyboard, clock, live data, MIDI, a phone</li>
+              <li>What outputs: a screen, a projector, sound, a window in a dark room</li>
+              <li>Discussion: <strong>what are the design constraints here, and what are the opportunities?</strong> We have this room, this hour, 6pm darkness, laptops, and no budget. What does that make possible that a museum can't do? What does it rule out?</li>
+              <li>This is step one of the sequence up top — mapping the edges of the box. From here on we're doing the part you already know how to do.</li>
+            </ul>
+            <div class="hw">
+              <span class="hw__label">Homework</span>
+              <p>Bring three works that use responsive video or a responsive image. Not moodboard images — actual works, with a maker and a date. Be ready to say what the input is and what the output is.</p>
+            </div>
+            <div class="hw">
+              <span class="hw__label">And homework</span>
+              <p>Ten concepts. One frame sketched for each, plus one line: <em>what's the input, what changes, how does the viewer know.</em> If you can't answer that third part, it's not a concept yet.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="session">
+          <div class="session__n">Session III</div>
+          <div>
+            <h3 class="session__t">Pitch a concept</h3>
+            <ul>
+              <li>Pitch us your three favorites out of the ten</li>
+              <li>Class critique, and the question we're asking every time: is this a loop, or is this a video with a button on it?</li>
+              <li>The hard one: how does the viewer know they did something? If nobody can tell they're affecting it, it isn't interactive — it's just decoration that happens to move.</li>
+              <li>Pick one. Today. Committing to a mediocre idea on Monday beats picking a great one on Friday.</li>
+            </ul>
+            <div class="hw">
+              <span class="hw__label">Homework</span>
+              <p>Build the smallest possible version that proves the loop closes. One input wired to one visible change. It should be ugly. It should take you an evening, not a weekend. This is a spike, not a draft.</p>
+            </div>
+            <div class="hw">
+              <span class="hw__label">And homework</span>
+              <p>If your piece needs hardware I don't have, or a location outside this room, tell me now. Today is the last day either of those is a free decision.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="session">
+          <div class="session__n">Session IV</div>
+          <div>
+            <h3 class="session__t">Does the loop close?</h3>
+            <ul>
+              <li>Show the spike. We're only asking one question: does something change when you do something?</li>
+              <li>Work session, laptops open</li>
+              <li>Rolling desk crits — I'll come to you</li>
+            </ul>
+            <div class="hw">
+              <span class="hw__label">Homework</span>
+              <p>Get the whole chain working end to end, even if every single part of it is bad. A complete bad version is worth more right now than a beautiful fragment.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="session">
+          <div class="session__n">Session V</div>
+          <div>
+            <h3 class="session__t">Work session + Claude clinic</h3>
+            <ul>
+              <li>Quick round: what's blocked? One sentence each.</li>
+              <li>Claude clinic — bring your actual error. We're going to debug two or three of these in public, on the projector, together. Watching someone else get unstuck is most of the value here.</li>
+              <li>Work session</li>
+            </ul>
+            <div class="hw">
+              <span class="hw__label">Homework</span>
+              <p>By Wednesday it runs for three minutes, untouched, without crashing. That's the bar.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="session">
+          <div class="session__n">Session VI</div>
+          <div>
+            <h3 class="session__t">Show it off (in progress)</h3>
+            <ul>
+              <li>Set up around the room. Everybody runs at once. Lights down.</li>
+              <li>Walk around and use each other's work.</li>
+              <li>If you can, bring somebody who isn't in this class. A roommate, a friend from another studio. Strangers are the whole point.</li>
+              <li>The test: can someone figure out what to do without you talking? You are not allowed to explain your piece. Stand there and watch them not understand it. It's educational and it's painful.</li>
+              <li>Written feedback on cards, so people can be honest.</li>
+            </ul>
+            <div class="hw">
+              <span class="hw__label">Homework</span>
+              <p>Fix the thing the strangers didn't get. That's the priority, ahead of anything on your own list. <em>Then</em> make it beautiful.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="session">
+          <div class="session__n">Session VII</div>
+          <div>
+            <h3 class="session__t">Finish it</h3>
+            <ul>
+              <li>Work session, final push</li>
+              <li>Discussion: how do you document an interactive piece? A screen recording shows what it looks like, not what it's like. You need a body, a hand, a face, a person hesitating and then figuring it out.</li>
+              <li>Talk through the final demo format so nobody's surprised</li>
+            </ul>
+            <div class="hw">
+              <span class="hw__label">Homework</span>
+              <p>Finish. Record your documentation video — 60 to 90 seconds, human in the frame. Write your build log. Commit everything.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="session">
+          <div class="session__n">Session VIII</div>
+          <div>
+            <h3 class="session__t">Final</h3>
+            <ul>
+              <li>Final installs, running live, room set up. If you're installed somewhere else in the building, we'll walk over to you.</li>
+              <li>Three minutes each: what it is, where the input comes from, what broke, and what you'd do with another month</li>
+              <li>I want the "what broke" part out loud. Everyone in this room got stuck, and pretending otherwise is how the next person decides they're the only one who's bad at this.</li>
+              <li>Documentation videos</li>
+            </ul>
+            <div class="hw">
+              <span class="hw__label">Homework</span>
+              <p>Nothing. Push your <code>.toe</code> file, your video, and your build log. We're done with Mirror / Window.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="foot wrap">
+  <span>Set in Garamond Premier &amp; printed at Lawrence, in the State of Kansas</span>
+  <span>IXD415 · University of Kansas · MMXXVI</span>
+  <span>© 2026 Matt Kirkland</span>
+</footer>
+
+</body>
+</html>

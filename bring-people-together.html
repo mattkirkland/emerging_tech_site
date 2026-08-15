@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bring People Together — IXD415</title>
+<meta name="description" content="Project 2: design something that gets real people together, then go get a hundred of them to try it. Adapted from Kelin Zhang.">
+<link rel="stylesheet" href="https://use.typekit.net/dky6jkz.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="wordmark" href="index.html">IXD415 // Emerging Tech</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Course</a>
+      <a href="details.html">Details</a>
+      <a href="mirror-window.html">Mirror / Window</a>
+      <a href="bring-people-together.html" aria-current="page">Bring People Together</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="meta">
+    <span>Project 2</span>
+    <span>5 weeks · 10 sessions</span>
+    <span>Groups of 3–4</span>
+    <span>100 people</span>
+  </div>
+</div>
+
+<main id="main">
+  <div class="wrap">
+
+    <section class="hero">
+      <span class="eyebrow">Project 2</span>
+      <h1>Bring People<br>Together</h1>
+      <p class="dek">Design something that gets real people together. Then go get a hundred of them to try it.</p>
+    </section>
+
+    <section>
+      <div class="note">
+        <p>This project is adapted, with gratitude, from <a href="https://risd-ai-studio.notion.site/Bring-people-together-926fd9ff9b084af881afeb0c188fc44b">Kelin Zhang's “Bring People Together,”</a> written for her AI Software Design Studio at RISD. The structure, the five-week arc, and most of the good ideas are hers. She credits <a href="https://ryancan.build/">Ryan Mather</a> and <a href="https://maxbittker.com/">Max Bittker</a> for feedback on the original.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="prose--wide">
+        <p class="lede">It is a designer's job to bridge the gap between technology and human behavior. As the internet has entered every part of our lives, it has upended interpersonal connection at every level and scale.</p>
+        <p>Phones and social media can cause loneliness and polarization, and they can also connect us to people we'd never otherwise have met. Generative AI now threatens to replace real human interaction with a simulation of human interaction that is available at three in the morning and never disagrees with you.</p>
+        <p>How might we fight that entropy?</p>
+        <p>For this project, design a way to bring people together — online or in real life.</p>
+        <p>Everything else in this course is about the technology. This one is about the people. The software is a means, and a fairly small one.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <span class="eyebrow eyebrow--ink">The setup</span>
+        <h2>Client, groups, goals</h2>
+      </div>
+
+      <div class="rows">
+
+        <div class="row">
+          <div class="row__key">Your client</div>
+          <div class="row__val">
+            <p>Real people. Ones you can actually reach.</p>
+            <p>Too many school projects design imaginary solutions to imaginary problems for imaginary users. Not this one. You will talk to real people, show them real prototypes, and watch what they actually do — which will mostly be <em>ignore you</em>. Getting comfortable with being ignored is part of the assignment.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row__key">Groups</div>
+          <div class="row__val">
+            <p>Because life is a group project. You'll be assigned to a group of 3 or 4. You don't pick.</p>
+            <ul>
+              <li class="u-muted">Group 1 — TK</li>
+              <li class="u-muted">Group 2 — TK</li>
+              <li class="u-muted">Group 3 — TK</li>
+              <li class="u-muted">Group 4 — TK</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row__key">Learning goals</div>
+          <div class="row__val">
+            <ul>
+              <li>Design for real people, not imaginary users. Get comfortable talking to strangers, showing them something unfinished, and changing your plan because of what they did.</li>
+              <li>Aim at <strong>behavior</strong>, not at the artifact. The thing you're making is not the point; what happens between people because of it is the point.</li>
+              <li>Think about software from the perspective of <strong>how it works</strong>, not how it looks. Making it look good is the easy part. How will you constrain or encourage certain kinds of behavior?</li>
+              <li>Get comfortable with scrappy, fast, ugly, iterative prototyping.</li>
+              <li>Understand distribution and network effects — the brutal reality that a good idea nobody uses is indistinguishable from a bad idea.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <span class="eyebrow eyebrow--ink">Non-negotiable</span>
+        <h2>Requirements</h2>
+      </div>
+
+      <div class="prose--wide">
+        <ul>
+          <li><strong>Get at least 100 people to try it.</strong> Yes, one hundred.</li>
+          <li><strong>Get at least 10 people into live interaction</strong> with each other through your project. Live can mean software (a chat, a call, a shared canvas) or real life (you told them to meet at a place and time, and they went).</li>
+          <li><strong>Document those interactions.</strong> Video, screen recordings, chat logs, photos — whatever fits. Decide what to leave out for privacy.</li>
+          <li><strong>Get consent.</strong> People need to know they're being documented and be okay with it. This is not optional and it is not a formality.</li>
+          <li><strong>There must be a software component.</strong> It does not have to be pixels on a screen. It could be a number you text. It could be a phone tree. It could be a bot in somebody's Discord.</li>
+          <li><strong>Test with real people every single week.</strong> If you can't get a prototype testable in a week, come talk to me about scoping down. Every week. No exceptions, no “we're still building.”</li>
+          <li><strong>Think about safety.</strong> Add basic guardrails against destructive behavior. We'll workshop this — the question to keep asking is <em>how would an angry ex use this?</em></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <span class="eyebrow eyebrow--ink">Where the writing lives</span>
+        <h2>Your group repo</h2>
+      </div>
+
+      <div class="prose--wide">
+        <p>Every group keeps a shared repo on GitHub. All of you commit to it. This is where the git and markdown work from earlier in the semester stops being an exercise and starts being how you actually work.</p>
+        <p>It is not for code, necessarily. It's for the writing:</p>
+        <ul>
+          <li><code>README.md</code> — what your project is, in one paragraph, in plain language. Rewrite it every time the project changes. If you can't write this paragraph, you don't have a project yet.</li>
+          <li><code>log.md</code> — a running weekly log. What did we test, with whom, what happened, what surprised us. Append, don't overwrite. This becomes your presentation.</li>
+          <li><code>todo.md</code> — shared todos, with names on them. Who is doing what by when.</li>
+          <li><code>notes/</code> — one file per interview, anonymized. Raw and messy is fine.</li>
+          <li><code>crits.md</code> — what we heard in crit and what we're doing about it.</li>
+          <li><code>numbers.md</code> — your running tally toward 100 people reached and 10 in live interaction. Update it every week. Don't reconstruct it at the end; you will get it wrong and I will be able to tell.</li>
+        </ul>
+
+        <h3>Rules</h3>
+        <ul>
+          <li><strong>Everyone commits.</strong> I'm going to look at the commit history, and “one person did all the pushing” is visible from orbit. If you're the group member who doesn't touch the repo, you're the group member who didn't do the project.</li>
+          <li><strong>Write in markdown.</strong> Plain text, readable by a human, readable by an LLM, diffable by git. That's the whole argument for it.</li>
+          <li><strong>Commit when something happens</strong>, not once at the end of the week. A repo with four commits at 11pm on Sunday is a repo that taught you nothing.</li>
+        </ul>
+
+        <blockquote>
+          <p>Fair warning: three people editing <code>todo.md</code> at the same time is going to produce a merge conflict, probably in week one. That's not a malfunction. That's the assignment finding you. Resolve it, and now you know how to do that for the rest of your life.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <span class="eyebrow eyebrow--ink">What you hand in</span>
+        <h2>Deliverables &amp; constraints</h2>
+      </div>
+
+      <div class="rows">
+        <div class="row">
+          <div class="row__key">Deliverables</div>
+          <div class="row__val">
+            <ol>
+              <li><strong>A working thing</strong>, in whatever form it ended up taking.</li>
+              <li><strong>Your group repo</strong>, with a real commit history from all of you — README, weekly log, todos, interview notes, crit notes, running numbers.</li>
+              <li><strong>A group Figma file</strong> for the visual work — storyboards, mocks, screens, test documentation. Words go in the repo; pictures go in Figma.</li>
+              <li><strong>Evidence you hit the numbers</strong> — 100 people reached, 10+ in live interaction, documented with consent.</li>
+              <li><strong>A final presentation</strong>, 15 minutes, with a guest critic in the room who has never seen your project. Everything from our presentation thread applies here. This is the one that counts.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row__key">Constraints</div>
+          <div class="row__val">
+            <ul>
+              <li>Five weeks. Testing starts in week one, not week three.</li>
+              <li>You may use AI to help build it. It doesn't need to be user-facing, though it can be.</li>
+              <li>It doesn't need to be an app. In fact, ideas catch on more easily when they ride on behavior people already have, instead of asking them to learn a new one.</li>
+              <li>Words, notes, todos, and numbers live in the repo. Storyboards, mocks, and screens live in Figma. Your presentation is yours to build in whatever you want.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row__key">Laptops</div>
+          <div class="row__val">
+            <p>This is the most Laptop Closed project we'll do, which is going to feel strange for a class about emerging technology. Most of the real work happens in a conversation with a person who is not in this room. If your group spends week one in front of a screen, you have already made the main mistake.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <span class="eyebrow eyebrow--ink">When you're stuck</span>
+        <h2>Questions to push on</h2>
+      </div>
+
+      <div class="prose--wide">
+        <h3>What common motivators could you tap into?</h3>
+        <p>Finding love. Making money. Food and drink. Fear. Anger. Convenience. Fun. Mystery and novelty. Exclusivity and status. Achievement and validation. The <a href="https://en.wikipedia.org/wiki/Seven_deadly_sins">seven deadly sins</a> (counterpoint: the <a href="https://en.wikipedia.org/wiki/Seven_virtues">seven virtues</a>). Mismatches in what people need — people who want tutoring and people who want to tutor. Shared obsessions.</p>
+
+        <h3>What groups do you actually have access to?</h3>
+        <p>Your family, and families like yours. Specific clubs and orgs at KU. Students at other schools. Grad students if you're an undergrad. Recent grads. The people who work at the places you go every week. Your dorm, your floor, your building. Fandoms you're already in. Groups you already belong to — that's an asset, not a bias.</p>
+
+        <h3>What is the <a href="https://en.wikipedia.org/wiki/Magic_circle_(games)">magic circle</a> in your idea?</h3>
+        <p>What are the rules, and where do they stop applying?</p>
+
+        <h3>Mechanics worth stealing</h3>
+        <p>Games and competitions. A daily repeating event (Wordle, BeReal). Anything with a mystery and a reveal. A marketplace between people who have something and people who need it.</p>
+
+        <h3>How will you find more people?</h3>
+        <p>Posting in Discords and online communities. Going viral, if you're lucky. Asking existing users to bring you new ones — this one actually works and almost nobody tries it.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <span class="eyebrow eyebrow--ink">Mostly Kelin's list, because it's a great list</span>
+        <h2>Inspo</h2>
+      </div>
+
+      <ul class="linklist">
+        <li><a href="https://www.liammcgregor.com/thoughts/marriage-pact">Stanford Marriage Pact</a><span class="sub">Campus matchmaking questionnaire. Kelin's rule: if you get people to marry each other, automatic A+. I'm honoring it.</span></li>
+        <li><a href="https://together.tldraw.com/">Together</a> and <a href="https://lens.tldraw.com/">Lens</a> by tldraw<span class="sub">Multiplayer canvas, and the same with an AI-generated window. <a href="https://youtu.be/0iZdmGmk3sQ?si=zaVARs5ek9j5g60z&amp;t=3769">Voiceover from the makers.</a></span></li>
+        <li><a href="http://stranger.video/">stranger.video</a> by <a href="http://eieio.games/">eieio.games</a><span class="sub">An online staring contest.</span></li>
+        <li><a href="https://eieio.games/essays/the-secret-in-one-million-checkboxes/">One Million Checkboxes</a><span class="sub">A multiplayer page of checkboxes, and the story of the teens who hid secret messages in it. <a href="https://www.youtube.com/watch?v=OI4DbECnp8A">Watch the talk.</a></span></li>
+        <li><a href="https://talkpaperscissors.com/">Talk Paper Scissors</a><span class="sub">Rock paper scissors over the phone.</span></li>
+        <li><a href="https://call-confession.com/">Confession</a> by Greg Hochmuth and Gideon Jacobs<span class="sub">Call to hear a confession and leave one.</span></li>
+        <li><a href="https://dialup.com/">Dialup</a> by Danielle Baskin<span class="sub">Matched with a stranger for a weekly phone call.</span></li>
+        <li><a href="https://www.youtube.com/watch?v=eMhcL2yL7RI">Wordle</a> by Josh Wardle<span class="sub">The talk where he lands on people looking for ways to say “I love you” without saying it.</span></li>
+        <li><a href="https://www.jackboxgames.com/">Jackbox Games</a><span class="sub">Fibbage, Quiplash.</span></li>
+        <li><a href="https://en.wikipedia.org/wiki/New_York%E2%80%93Dublin_Portal">NYC–Dublin Portal</a><span class="sub">A live video hole between two cities, shut down for rowdiness. Compare with the <a href="https://engineering.stanford.edu/news/wormhole-connects-stanford-and-mit">MIT–Stanford Wormhole</a>: same idea, different execution and different people, and nobody used it. Read those two together; that difference is the whole course.</span></li>
+        <li><a href="https://en.wikipedia.org/wiki/HQ_(video_game)">HQ Trivia</a><span class="sub">A game show at noon, every day.</span></li>
+        <li><a href="https://www.robinsloan.com/notes/home-cooked-app/">An App Can be a Home-Cooked Meal</a> by Robin Sloan<span class="sub">Software made for eleven people.</span></li>
+        <li><a href="http://pomo.chat/">pomo.chat</a> by Kelin<span class="sub">A pomodoro timer with a chatroom in the breaks.</span></li>
+        <li><a href="https://poetry.camera/">Poetry Camera</a> by Kelin and Ryan Mather</li>
+      </ul>
+
+      <h3>Not software, but they bring people together anyway</h3>
+      <ul class="linklist">
+        <li><a href="https://parentsarehuman.com/">Parents are Human</a><span class="sub">A card game for bilingual families.</span></li>
+        <li>Personality quizzes<span class="sub">MBTI, enneagram, birth charts. People adore connecting over these.</span></li>
+        <li><a href="https://archive.ph/iGGJz">Perpetual Stew</a> by Annie Rauwerda<span class="sub">A month-old stew fed by the public.</span></li>
+      </ul>
+
+      <h3>Tools that make multiplayer easier</h3>
+      <p class="u-muted">You don't have to use any of these.</p>
+      <ul class="linklist">
+        <li><a href="https://tldraw.dev/#4-Sync-betweens-users">tldraw SDK</a><span class="sub">Multiplayer canvas.</span></li>
+        <li><a href="https://firebase.google.com/docs/database">Firebase Realtime Database</a><span class="sub">Live chat, with websockets.</span></li>
+        <li><a href="https://www.twilio.com/en-us/sms/pricing/us">Twilio SMS</a> and <a href="https://www.twilio.com/en-us/voice/pricing/us">Twilio Voice</a><span class="sub">Texting and calling.</span></li>
+        <li><a href="https://www.agora.io/en/">Agora</a><span class="sub">Live voice and video.</span></li>
+        <li><a href="https://developers.zoom.us/blog/how-to-embed-zoom-into-website/">Embedding Zoom</a><span class="sub">A Zoom call inside your site.</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <span class="eyebrow eyebrow--ink">Five weeks</span>
+        <h2>Sessions</h2>
+      </div>
+
+      <div class="sessions">
+
+        <div class="phase"><p class="phase__t">Week 1 of 5 — Get out there and talk to people!</p></div>
+
+        <div class="session">
+          <div class="session__n">Session I</div>
+          <div>
+            <h3 class="session__t">Kickoff</h3>
+            <ul>
+              <li>Project brief. Groups assigned.</li>
+              <li>Discussion: what does it mean to design for behavior instead of for an artifact?</li>
+              <li>Discussion: the internet was supposed to connect us. Some of it did. Which parts, and why those?</li>
+              <li>Meet your group. Decide how you're splitting the work, and write it down.</li>
+              <li><strong>Set up your group repo before you leave the room tonight.</strong> One person creates it, everyone else gets added, everyone clones it, everyone makes one commit. Nobody goes home until all three or four names are in the log.</li>
+              <li>Plan your interviews: who, when, and what you actually want to find out. Remember from CCC — “what do you think?” is not a research question.</li>
+            </ul>
+            <div class="hw">
+              <span class="hw__label">Homework</span>
+              <p>Write your first <code>README.md</code> — one paragraph on who you think you're designing for and why. It will be wrong. Commit it anyway; being able to see how wrong it was is the point.</p>
+            </div>
+            <div class="hw">
+              <span class="hw__label">And homework</span>
+              <p>Each person talks to <strong>3 people</strong>. In person or on a call — <em>no surveys</em>. Someone you know or someone you just met. 30 to 60 minutes each, so there's time to get past the polite part. Record audio with permission; use AI transcription and an LLM to help you pull out takeaways.</p>
+              <p>Listen for: who they are, what their days are like, how they want to connect with people, and what's getting in the way.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="session">
+          <div class="session__n">Session II</div>
+          <div>
+            <h3 class="session__t">What did you hear? / 20 ideas each</h3>
+            <ul>
+              <li>Group readouts from the interviews. What surprised you? Your notes should already be committed.</li>
+              <li>Cluster the people you talked to. Is it a demographic? A shared trait? A shared frustration? Pick <strong>one kind of person</strong> to aim at for now.</li>
+              <li>Workshop: storyboards as an ideation format. Why a comic instead of a screen — because it forces you to think about what happens <em>over time</em>, and about the moment before and the moment after.</li>
+            </ul>
+            <div class="hw">
+              <span class="hw__label">Homework</span>
+              <p><strong>20 ideas each</strong> (so 60 or 80 as a group), each one a 2–4 panel storyboard comic. Pull from the interviews. There needs to be a software component but it does not need to be an app.</p>
+            </div>
+            <div class="hw">
+              <span class="hw__label">And homework</span>
+              <p>As a group, pick <strong>3 ideas</strong> (4-person groups: 4) and prototype all of them. Test each with <strong>at least 5 people</strong> it's designed for. Prototypes can be Figma mocks, a text bot, a site Claude built you in an hour, or a total simulation — you texting people manually and pretending it's automated. Polish is actively unwanted. Document reactions, with consent.</p>
+              <p>Ask yourself: did they do what you expected? What surprised you? What flopped?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="phase"><p class="phase__t">Week 2 of 5 — Iterate &amp; test</p></div>
+
+        <div class="session">
+          <div class="session__n">Session III</div>
+          <div>
+            <h3 class="session__t">Crit #1</h3>
+            <ul>
+              <li>Every group presents: ideas, prototypes, what people actually did, and your plan for this week.</li>
+              <li>Present <em>from your repo</em>. Open the log, open the numbers, show us what's actually written down. Every crit this project works this way.</li>
+              <li>We'll workshop scope. Some of you will need to make your idea much smaller.</li>
+              <li>If nothing from week one worked, you may switch user groups and start over. That's allowed and it's not failure.</li>
+              <li>If something worked, build variants of it and find out <em>why</em> it worked.</li>
+              <li>Before you leave: commit your crit notes and rewrite your README if the project moved.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="session">
+          <div class="session__n">Session IV</div>
+          <div>
+            <h3 class="session__t">Distribution / work session</h3>
+            <ul>
+              <li>Discussion: how will anyone ever find this? Network effects, cold starts, and why the second user is harder than the first.</li>
+              <li>Read together: the NYC–Dublin Portal and the MIT–Stanford Wormhole. Same technology. Opposite outcomes. Why?</li>
+              <li>Group work session, with me circulating</li>
+            </ul>
+            <div class="hw">
+              <span class="hw__label">Homework</span>
+              <p>Prototype 1–3 more ideas based on what you learned. Test with <strong>15+ new people</strong>. Try getting your existing testers to bring you new ones.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="phase"><p class="phase__t">Week 3 of 5 — Iterate &amp; test again</p></div>
+
+        <div class="session">
+          <div class="session__n">Session V</div>
+          <div>
+            <h3 class="session__t">Crit #2</h3>
+            <ul>
+              <li>Same format, presented from your repo. Ideas, prototypes, reactions, plan.</li>
+              <li>The question this week: what's the actual mechanic? Can you say it in one sentence? If your README still doesn't say it, that's the tell.</li>
+              <li>Numbers check. Where are you against 100 and 10? Out loud, in front of everyone.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="session">
+          <div class="session__n">Session VI</div>
+          <div>
+            <h3 class="session__t">Safety / work session</h3>
+            <ul>
+              <li>Discussion: <strong>how would an angry ex use this?</strong> Every group answers out loud, about their own project.</li>
+              <li>Guardrails, reporting, blocking, rate limits, and the things that go wrong when strangers meet strangers. What's your minimum viable protection?</li>
+              <li>Group work session</li>
+            </ul>
+            <div class="hw">
+              <span class="hw__label">Homework</span>
+              <p>Iterate again. <strong>15+ new people.</strong> If you know your shape, start hardening the software and thinking about how it looks.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="phase"><p class="phase__t">Week 4 of 5 — Converge</p></div>
+
+        <div class="session">
+          <div class="session__n">Session VII</div>
+          <div>
+            <h3 class="session__t">Crit #3</h3>
+            <ul>
+              <li>By now you should know the shape of your project — you know the mechanics, and the work left is execution.</li>
+              <li>If you don't know your shape yet, that's the emergency we're solving today. Look hard at what's working in other groups.</li>
+              <li>Numbers check again. This is also when I read your commit history, so if one name is missing from it, now is the moment to fix that.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="session">
+          <div class="session__n">Session VIII</div>
+          <div>
+            <h3 class="session__t">Documentation &amp; promotion / work session</h3>
+            <ul>
+              <li>Discussion: how do you document something that happens between people? What does the evidence even look like?</li>
+              <li>Make a short TikTok or Reel that promotes your project. Genuinely — this is both a deliverable and a distribution channel.</li>
+              <li>Add simple analytics if it applies, so you can count unique visitors instead of guessing.</li>
+              <li>Group work session</li>
+            </ul>
+            <div class="hw">
+              <span class="hw__label">Homework</span>
+              <p>Push for your numbers. Polish. You should be testing with the bulk of your users by the end of this week.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="phase"><p class="phase__t">Week 5 of 5 — Polish, promote, present</p></div>
+
+        <div class="session">
+          <div class="session__n">Session IX</div>
+          <div>
+            <h3 class="session__t">Dress rehearsal</h3>
+            <ul>
+              <li>Every group runs their presentation, for real, with a timer.</li>
+              <li>We tear them apart while there's still time to fix them. This is the payoff for everything we've been doing with the rolling presentations all semester.</li>
+              <li>Lead with what the project <em>was</em> and how it worked. Then the interesting findings. Then the reactions that surprised you. Do not open with your process.</li>
+              <li>Your <code>log.md</code> is the raw material for this. Five weeks of “what we tested and what happened” is a narrative if you wrote it down as you went, and a memory exercise if you didn't.</li>
+            </ul>
+            <div class="hw">
+              <span class="hw__label">Homework</span>
+              <p>Fix the presentation. Practice it out loud, standing up, more times than feels necessary. Finish your Figma file and write a final README.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="session">
+          <div class="session__n">Session X</div>
+          <div>
+            <h3 class="session__t">Final presentations</h3>
+            <ul>
+              <li>Guest critic in the room, who has never seen any of this before.</li>
+              <li>Four groups, roughly 35 minutes each: about 15 minutes presenting, the rest discussion.</li>
+              <li>Show us the documentation. Real people, doing real things, because of something you made.</li>
+            </ul>
+            <div class="hw">
+              <span class="hw__label">Homework</span>
+              <p>Final commit — README, complete log, final numbers. Then nothing. We're done with Bring People Together.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="foot wrap">
+  <span>Set in Garamond Premier &amp; printed at Lawrence, in the State of Kansas</span>
+  <span>IXD415 · University of Kansas · MMXXVI</span>
+  <span>© 2026 Matt Kirkland</span>
+</footer>
+
+</body>
+</html>
