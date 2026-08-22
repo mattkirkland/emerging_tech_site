@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+.AppleDouble
+._*
+
+# Files the FUSE mount parks when an open file is replaced
+.fuse_hidden*
+
+# Staging area for things to trash — never publish this
+_to_delete/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Windows, in case anyone forks this on a PC
+Thumbs.db
