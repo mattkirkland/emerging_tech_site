@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mirror // Window - IXD415</title>
+<title>Weird Mirror // IXD415</title>
 <meta name="description" content="Project 1: a moving image that responds. Build something in TouchDesigner that is different because you walked up to it.">
 <link rel="stylesheet" href="https://use.typekit.net/dky6jkz.css">
 <link rel="stylesheet" href="style.css">
@@ -27,67 +27,59 @@
   </div>
 </header>
 
-<section class="wrap" aria-label="Course information">
-  <div class="meta">
-    <span>Project 1</span>
-    <span>4 weeks · 8 sessions</span>
-    <span>Individual</span>
-    <span>TouchDesigner</span>
-  </div>
-</section>
+
 
 <main id="main">
   <div class="wrap">
 
     <section class="hero">
       <span class="eyebrow">Project 1</span>
-      <h1>Mirror / <br>Window</h1>
+      <h1>Weird Mirror</h1>
       <p class="dek">A moving image that responds.</p>
     </section>
 
     <section>
       <div class="prose--wide">
-        <p class="lede">So much cool interactive work involves video. But video itself isn't very interactive. You can make a beautiful demo in After Effects or a compelling bit in CapCut, and it will do exactly the same thing every single time, forever, no matter who's standing in front of it.</p>
-        <p>In this project we're going to make a moving image that responds. Something that is different because you walked up to it.</p>
-        <p>The tool is TouchDesigner. It's a node-based visual programming environment used for a lot of the interactive installation work you've seen in museums, concerts, and lobbies. The learning curve is steep and I'm not going to pretend otherwise. But we have an MCP connected to Claude, which means you can describe what you want in English and get help building it — and more importantly, when it breaks, you can ask for help.</p>
-        <p>That last part is the actual skill I want you to leave with.</p>
+        <p class="lede">So much cool interactive work involves video, but video itself isn't very interactive. You can make a beautiful demo in After Effects or a compelling bit in CapCut, and it does exactly the same thing every single time, forever. It's functionally not interactive. </p>
+        <p>But what if you could <em>make it interactive?</em></p>
+        <p>In this project we're going to make a moving image that responds to a user. Something that is different because you interact with it.</p>
+        <p>We'll be working in TouchDesigner. It's a node-based visual programming environment that is used for a lot of the interactive installation work you've seen in museums, concerts, and lobbies. The learning curve is pretty steep, but we can connect an MCP to Claude, and then you can describe what you want in English and get help building it.  </p>
       </div>
     </section>
 
     <section>
       <div class="section-head">
         <span class="eyebrow eyebrow--ink">Read this part twice</span>
-        <h2>Why this tool, and why the tool is not the point</h2>
+        <h2>WHy TouchDesigner?</h2>
       </div>
 
       <div class="prose--wide">
-        <p>TouchDesigner is a stand-in. In two years it might be something else, and in five years it almost certainly will be. What doesn't change is the sequence you run whenever you meet an unfamiliar technology, which is the whole reason this course exists.</p>
+        <p>Because it's unfamiliar. TouchDesigner is a good practice case for an intimidating technology. </p>
 
-        <h3>First, find out what the thing can actually do</h3>
-        <p>Not what the marketing says it does. Read the docs, watch somebody use it, poke it, break it, build the smallest thing that works. You are mapping the edges of a box. This part feels like flailing and it is supposed to.</p>
+        <h3>First, we find out what the thing can actually do</h3>
+        <p>Not only what the marketing says it does. Read the docs, watch somebody use it, poke it, break it, build the smallest thing that works. You are mapping the edges of a box.</p>
 
         <h3>Then aim your existing toolkit at it</h3>
-        <p>You've spent three years learning how to design interactions, and none of that stops applying just because the medium is unfamiliar:</p>
+        <p>You've spent three years learning how to design interactions, and your skill set still applies here.</p>
         <ul>
-          <li><strong>Input and affordances</strong> — what can a person do here, and how do they know they can do it?</li>
-          <li><strong>Output and feedback</strong> — what happens when they do, and how do they know it happened?</li>
-          <li><strong>Constraints</strong> — what does this medium refuse to do? What does this room, this hour, this hardware, this audience refuse to do?</li>
-          <li><strong>And then the normal loop</strong> — ideate, prototype, test, refine, and do it again.</li>
+          <li><strong>Input and affordances</strong>. What can a person do here, and how do they know they can do it?</li>
+          <li><strong>Output and feedback</strong>. What happens when they do, and how do they know it happened?</li>
+          <li><strong>Constraints</strong>. What does this medium refuse to do? What does the lcation, the time, the hardware, the audience know how to do or refuse to do?</li>
+          <li><strong>And then the normal loop</strong>. Ideate, prototype, test, refine, and do it again.</li>
         </ul>
 
         <blockquote>
-          <p>The failure mode of emerging tech work is stopping after the first part. Plenty of people learn a new tool and then make a demo that shows off the tool. A demo is not a design. The design starts when you take a thing that can do something and point it at a person.</p>
+          <p>The failure mode of emerging tech work is stopping after the first part. Plenty of people learn a new tool and then make a demo that shows off the tool. But a demo is not usually an interesting design. We want to design an iteraction, and get people using it.</p>
         </blockquote>
 
-        <p>That's why this project is evaluated on whether a stranger understands your piece, and not on how complicated your node network is.</p>
-        <p>You're going to run this same sequence again in the spring with different tools. The tool changes. The sequence doesn't.</p>
+        <p>That's part of why this project will be evaluated on whether a stranger understands your piece, and not on how complicated your node network is.</p>
+        <p>You wil probably run this same sequence again in the spring with different tools. The tech can change but your process should still apply.</p>
       </div>
     </section>
 
     <section>
       <div class="section-head">
-        <span class="eyebrow eyebrow--ink">The setup</span>
-        <h2>Client, doors, deliverables</h2>
+        <h2>The Setup</h2>
       </div>
 
       <div class="rows">
@@ -95,20 +87,19 @@
         <div class="row">
           <div class="row__key">Your client</div>
           <div class="row__val">
-            <p>No client. But you do have a user, and she is very specific: she is a person who walks up to your piece having never seen it, having read nothing, with nobody standing next to her explaining it. She has about four seconds of curiosity before she walks away.</p>
-            <p>Everything you make has to survive her.</p>
+            <p>No client. But you do have a user, and she is very specific: she is a person who walks up to your piece having never seen it, having read nothing, with nobody standing next to her explaining it. We want your projectto intrigue, entrance, delight, unsettle, horrify, etc this person, without any help text.</p>
           </div>
         </div>
 
         <div class="row">
-          <div class="row__key">Two doors</div>
+          <div class="row__key">Weird Mirror</div>
           <div class="row__val">
-            <p>Pick one. It's just a way to decide where your input comes from.</p>
+            <p>This is my mental model here; your mileage may vary.</p>
             <ul>
-              <li><strong>Mirror</strong> — the input is the viewer. Webcam, microphone, presence, motion. The piece responds to the body in front of it.</li>
-              <li><strong>Window</strong> — the input is somewhere else. Live data, an API, a feed, a scrape, another room, another city. The piece is a hole in the wall looking at something far away.</li>
+              <li><strong>Mirror</strong>. The input is the viewer. They approach your piece, and something changes. Webcam, microphone, presence, motion. The piece responds to the body in front of it.</li>
+              <li><strong>But</strong> your input doesn't have to be visual. It could be audio. Or a keystroke? or a mouse movement? Or? or? or?
+
             </ul>
-            <p>You can combine them, and the interesting work often does. But start by picking one, because "it responds to everything" is how you end up with something that responds to nothing.</p>
           </div>
         </div>
 
@@ -116,10 +107,12 @@
           <div class="row__key">Deliverables</div>
           <div class="row__val">
             <ol>
-              <li><strong>A working <code>.toe</code> file.</strong> It runs on your machine. It runs when I'm standing there.</li>
-              <li><strong>A live demo, twice</strong> — an in-progress one in Session VI and a final one in Session VIII. Running, with people walking up to it.</li>
+              <li><strong>A project repo</strong>. This will be a public artifact in github. I want you to be keeping notes and progress-documentation here. I'll give you specifics as we go.</li>
+              <li><strong>A working <code>.toe</code> file.</strong> Touchdesigner runs on your machine. </li>
+              <li><strong>A live demo, twice</strong>. An in-progress one a final. Your project is running, with people walking up to it.</li>
               <li><strong>A documentation video, 60–90 seconds.</strong> There must be a human in the frame. A screen capture of your output is not documentation of an interactive piece; it's just a video, which is the exact thing we're trying to get away from.</li>
-              <li><strong>A build log</strong>, in markdown, committed to your repo. What you tried, what broke, what you asked Claude, what finally worked. Rough notes are fine — I'd rather have honest and ugly than polished and retroactive.</li>
+              <li><strong>A build log</strong>, in markdown, committed to your repo. What you tried, what broke, what you asked Claude, what finally worked. Rough notes are fine, we want these honest about your process, and not a retrospective. <br/><br/>Note that touch designer files (.toe) can be pretty big, so we're NOT going to commit them to our project repo.</li>
+              <li><strong>Some in-between things</strong>. I'll have some in-between research tasks for you that we'll add ot your repo.</li>
             </ol>
           </div>
         </div>
@@ -130,18 +123,11 @@
             <ul>
               <li>It has to run for three minutes without crashing and without you touching it.</li>
               <li>A stranger has to be able to use it without instructions.</li>
-              <li>Your laptop, a webcam, a mic, a keyboard, a screen, and an internet connection are the baseline, and a good project can be made from exactly that.</li>
-              <li><strong>You may bring in other hardware</strong> — other sensors, other input devices, projectors, motors, lights, whatever the idea needs. Do it at your own risk and your own budget. I'm not buying it, I can't guarantee it'll work, and "the part didn't ship" is not an extension. If the hardware is the whole idea, have a fallback.</li>
-              <li><strong>You may install it somewhere other than our classroom</strong> — a hallway, a stairwell, some neglected corner of the design building. That's allowed and sometimes it's much better. Two rules: it has to be within walking distance, and it has to be accessible to all of us during class time. Tell me early if you're going this direction.</li>
-              <li>You have four weeks. This is a sketch, not a career.</li>
+              <li>Your laptop, a webcam, a mic, a keyboard, a screen, and an internet connection are the baseline, and a good project can be made with that.</li>
+              <li><strong>You may bring in other hardware</strong>. Other sensors, other input devices, projectors, motors, lights, whatever the idea needs. Do it at your own risk and your own budget. I can't guarantee it'll work, and you don't want to get slowed down by logistics. But feel free to play with options! If the hardware is the whole idea, you may need a fallback.</li>
+              <li><strong>You may install it somewhere other than our classroom.</strong> LIke a hallway, a stairwell, some corner of Chalmers or Marvin. Two rules: it has to be within walking distance, and it has to be accessible to all of us during class time. Tell me early if you're going this direction.</li>
+              <li>We'll have about four weeks.</li>
             </ul>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="row__key">Laptops</div>
-          <div class="row__val">
-            <p>This one's a Laptop Open project. That's a change and I'm doing it on purpose — you can't learn a node graph from a comp book. But we'll still open and close them deliberately. When we're critiquing, laptops go down.</p>
           </div>
         </div>
 
@@ -159,14 +145,15 @@
       </div>
 
       <ul class="linklist">
-        <li><a href="https://www.smoothware.com/danny/art.html">Daniel Rozin — mechanical mirrors</a><span class="sub">The whole Mirror door, in physical form.</span></li>
-        <li><a href="https://camilleutterback.com/projects/text-rain/">Camille Utterback &amp; Romy Achituv — Text Rain</a><span class="sub">1999, and still the clearest demo of a legible interaction loop.</span></li>
-        <li>Rafael Lozano-Hemmer<span class="sub">Installation work, especially the pieces built on computer vision and biometrics.</span></li>
-        <li>Random International — Rain Room<span class="sub">Worth thinking about as an interaction almost everyone understands instantly.</span></li>
+        <li><a href="https://www.smoothware.com/danny/art.html">Daniel Rozin mechanical mirrors</a><span class="sub">The whole Mirror door, in physical form.</span></li>
+        <li><a href="https://theartistbreakfast.com">Breakfast</a><span class="sub">originaly a design firm but spun off into fancy mall installations</li>
+        <li><a href="https://camilleutterback.com/projects/text-rain/">Camille Utterback &amp; Romy Achituv — Text Rain</a><span class="sub">1999, an early demo of a legible interaction loop.</span></li>
+        <li><a href="https://www.random-international.com/rain-room">International Rain Room</a><span class="sub">Worth thinking about as an interaction almost everyone understands instantly.</span></li>
       </ul>
 
       <h3>Getting started with the tool</h3>
       <ul class="linklist">
+        <li><a href="hhttps://derivative.ca/product/touchdesigner-non-commercial/77">Get TouchDesigner</a><span class="sub">We want the free, non-commercial version</span></li>
         <li><a href="https://derivative.ca/UserGuide/Learn_TouchDesigner">Learn TouchDesigner</a><span class="sub">Derivative's own starting point.</span></li>
         <li><a href="https://derivative.ca/community-post/tutorial/full-beginner-course">Full Beginner Course</a></li>
         <li><a href="https://derivative.ca/tags/elekktronaut">Bileam Tschepe / elekktronaut</a><span class="sub">The best of the YouTube TD teachers.</span></li>
@@ -185,26 +172,32 @@
         <div class="session">
           <div class="session__n">Session I</div>
           <div>
-            <h3 class="session__t">Kickoff — what is a loop?</h3>
+            <h3 class="session__t">What is a loop?</h3>
             <ul>
               <li>Project brief: a moving image that responds</li>
               <li>Discussion: what's the actual difference between a video and an interaction? A video is a recording. An interaction is a loop: input, change, feedback, and the viewer noticing the feedback.</li>
               <li>Discussion: which of those four does most "interactive" work actually get wrong?</li>
-              <li>The two doors: Mirror and Window. Where does your input come from?</li>
+              <li>Weird Mirror concept</li>
               <li>Demo: what a TouchDesigner network looks like. What a node is. Why it's a graph and not a timeline.</li>
               <li>Install TouchDesigner (the non-commercial license is free)</li>
+              <li>Claude & CLaudecode in the app. Letting claude do stuff in a folder for you.</li>
+              <li>In class: new repo, README.md, log.md, image.</li>
             </ul>
+                        <div class="hw">
+              <span class="hw__label">Homework</span>
+              <p>Get TouchDesigner installed and get the Claude MCP connected. Then get <em>anything</em> on screen. Your webcam feed with a single small effect on it is plenty. Screenshot it. Put the screenshot in your repo.</p>
+            </div>
             <div class="hw">
               <span class="hw__label">Homework</span>
-              <p>Get TouchDesigner installed and get the Claude MCP connected. Then get <em>anything</em> on screen — your webcam feed with a single effect on it is plenty. Screenshot it.</p>
+              <p>Start a new project repo. Make it public so we can see it. Add a readme.md. Start a log.md. </p>
             </div>
             <div class="hw">
               <span class="hw__label">And homework</span>
-              <p>It will break. That's not a risk, it's the assignment. Write down what broke, what you asked Claude, and what happened next. Bring those notes.</p>
+              <p>Something was probably broken or difficult in this process. Write down what broke, what you asked Claude, and what happened next. Add that to log.md</p>
             </div>
           </div>
         </div>
-
+<!--
         <div class="session">
           <div class="session__n">Session II</div>
           <div>
@@ -328,11 +321,11 @@
             </ul>
             <div class="hw">
               <span class="hw__label">Homework</span>
-              <p>Nothing. Push your <code>.toe</code> file, your video, and your build log. We're done with Mirror // Window.</p>
+              <p>Nothing. Push your <code>.toe</code> file, your video, and your build log. We're done with Weird Mirror.</p>
             </div>
           </div>
         </div>
-
+      -->
       </div>
     </section>
 
